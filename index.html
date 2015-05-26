@@ -1,0 +1,25 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Practice the kana</title>
+	<link rel="stylesheet" href="kana.css">
+</head>
+
+<body onload="next();">
+	<div id="container">
+		<div id="content">
+			<div id="checkboxes">
+				Hiragana<input id="hiragana" type="checkbox" onchange="uncheck(); next(); return false;" checked>
+				Katakana<input id="katakana" type="checkbox" onchange="uncheck(); next(); return false;" checked>
+			</div>
+			<p id="kana"></p>
+			<p id="helpText">Enter the romaji for the symbol above:</p>
+			<form onsubmit="verify(); return false;">
+				<input id="romaji" type="text"><input id="submit" type="submit">
+			</form>
+		</div>
+	</div>
+	
+	<script src="kana.js"></script>
+</body>
