@@ -60,7 +60,7 @@ function next() {
 	} else {
 		document.getElementById("kana").innerHTML = katakana[romaji[choice]];
 	}
-} 
+}
 
 function verify() {
 	var kana = document.getElementById("kana").innerHTML;
